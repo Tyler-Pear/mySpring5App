@@ -1,4 +1,7 @@
 package TylerPearson.spring5webapp.repositories;
 
-public class AuthorRepository {
+import TylerPearson.spring5webapp.domain.Author;
+import org.springframework.data.repository.CrudRepository;
+
+public interface AuthorRepository extends CrudRepository<Author, Long> {
 }
